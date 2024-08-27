@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #170475, #780792);
+    color: white;
+}
+.nav .exit-btn-points{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+
+}
+.exit-btn-points button,
+.exit-btn-points a{
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgb(228, 236, 243);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #3524ce;
+}
+.exit-btn-points button:hover,
+.exit-btn-points a:hover{
+    background-color: #cc76df;
+}
+.current-point{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(210, 227, 242);
+    background-color: #780792;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+}
+.qtns-options{
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+.question{
+    margin-top: 100px;
+    padding-top: 30px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.options button{
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #140c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.correct{
+    background-color: rgb(12, 242, 12);
+}
+.wrong{
+    background-color: red;
+}
+.options button:hover{
+    background-color: #8a77e9;
+}
+.hints{
+    text-align: center;
+}
+.hints button{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3524ce;
+}
+.hints button:hover{
+    background-color: #cc76df;
+}
+.game-over-modal,
+.finished-game-modal{
+    background-color: aliceblue;
+    box-shadow: 3px 3px 15px #000;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    display: none;
+}
+.game-over-modal h2,
+.game-over-modal p,
+.finished-game-modal h2,
+.finished-game-modal p{
+    color: #780792;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 0;
+}
+.game-over-modal p,
+.finished-game-modal p{
+    font-size: 24px;
+    margin: 10px;
+}
+.game-over-modal a,
+.finished-game-modal a{
+    text-decoration: none;
+    color: #351b3a;
+    background-color: #8a77e9;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.game-over-modal a:hover,
+.finished-game-modal a:hover{
+    color: #8f8990;
+    background-color: #674cef;
+}
+
+@media (min-width: 500px) {
+    .current-point{
+        font-size: 30px;
+    }
+    .qtns-options{
+        height: 200px;
+        width: 400px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .current-point{
+        font-size: 40px;
+    }
+    .qtns-options{
+        height: 200px;
+        width: 400px;
+    }
+    .question{
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .current-point{
+        font-size: 40px;
+    }
+    .qtns-options{
+        height: 200px;
+        width: 700px;
+    }
+}
