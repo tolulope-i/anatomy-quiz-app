@@ -338,8 +338,6 @@ function displayQuestion() {
         optionButtons.appendChild(button);
     });
 
-
-
     // FUNCTIONALITY FOR THE RIGHT ANSWER BUTTON
     const rightAnswerButton = document.querySelector(".right-answer-btn");
     rightAnswerButton.onclick = () => {
@@ -367,8 +365,6 @@ function displayQuestion() {
             displayQuestion();
         }, 1000); 
     }
-
-
 
     // 50/50 BUTTON functionality FOR THE 5050 BUTTON
     const BTN5050 = document.querySelector(".btn5050");
